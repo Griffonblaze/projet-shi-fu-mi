@@ -1,20 +1,30 @@
-/*#root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}*/
-
-
+}
 
 html{
-  width:auto;
+  width:100%;
   height:100%;
   background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(202,163,227,1) 35%, rgba(255,255,255,1) 100%);
   background-repeat: no-repeat;
+  margin: 0;
+  color: purple;
 }
 
   /****** Home page*****/
+  .homeContainer{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  label{
+    margin:10px;
+  }
+
   input{
     border-radius:10px;
     padding:10px;
@@ -25,11 +35,19 @@ html{
 }
 
   /*******Navigation*******/
+  nav{
+    width:100%;
+  }
+
+  .nav-link{
+    text-decoration: none;
+  color: purple;
+  }
+
   nav li{
     float: right;
     list-style-type: none;
     text-decoration: none;
-    color: purple;
     height: 50px;
     line-height: 33px;
     padding: 0 10px; 
@@ -37,13 +55,16 @@ html{
     transition: .5s;
     }
 
-    nav  li:hover{
+    .nav-link:hover{
     background: purple;
-    color:antiquewhite;
+    color:white;
     }
   
   
   /*****Game page******/
+.party{
+  margin:100px;
+}
   h2{
     font-size: 25px;
     color:purple;
@@ -73,4 +94,23 @@ html{
   button:hover{
     transform: translate(2px,5px);
     box-shadow: 10px 5px 5px violet;
+  }
+
+  /*******Liste Users *******/
+  .usersH1{
+    margin-top:150px;
+  }
+
+  .users{
+    list-style-type: none;
+    margin:15px;
+  }
+
+  .users:hover{
+    scale:1.5;
+  }
+
+  .usersList{
+    color:purple;
+    text-decoration: none;
   }

@@ -9,18 +9,18 @@ function Root() {
         <nav>
           <ul>
             <li>
-            <NavLink to="/game">
+            <NavLink to="/game" className="nav-link">
                 Jouer au jeu
               </NavLink>
               
             </li>
             <li>
-              <NavLink  to="/users">
+              <NavLink  to="/users" className="nav-link">
                 Liste des Utilisateurs
               </NavLink>
             </li>
             <li>
-            <NavLink to="/">
+            <NavLink to="/" className="nav-link">
                 Page d'accueil
               </NavLink>
             </li>

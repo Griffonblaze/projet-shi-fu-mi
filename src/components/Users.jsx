@@ -10,12 +10,12 @@ function Users() {
 
   return (
     <>
-    <h1>Liste des utilisateurs</h1>
+    <h1 className="usersH1">Liste des utilisateurs</h1>
     <ul>
     {users.map((user,i) => 
     
-    <NavLink to={`/user/${i}`} key={i}>
-        <li>{user.name}</li> 
+    <NavLink to={`/user/${i}`} key={i} className="usersList">
+        <li className="users">{user.name}</li> 
     </NavLink>
     
     )}

@@ -45,6 +45,7 @@ function Home() {
 
   return (
     <>
+    <div className="homeContainer">
     <h1>Bienvenue sur notre page de jeu: le Shi-fu-mi, ou Pierre-Feuille-Ciseaux</h1>
     <p>Après vous être inscrit, vous allez choisir soit pierre, soit feuille, soit ciseaux.</p>
     <p>Selon le choix de l'adversaire, vous allez gagner, perdre, ou faire une égalité, et gagner un nombre de points correspondants.</p>
@@ -59,6 +60,7 @@ function Home() {
       <button className="beginButton" type="submit">Commencer la partie !</button>
     </form>
       {error !== ''? <p>{error}</p> : ''}
+      </div>
     </>
   )
 }

@@ -30,7 +30,7 @@ function Game() {
   return (
     <>
     
-    {turn>10? <h1 className="party">Partie terminée!</h1> : <h1>Jeu en cours, tour {turn}/10.</h1>}
+    {turn>10? <h1 className="party">Partie terminée!</h1> : <h1 className="party">Jeu en cours, tour {turn}/10.</h1>}
     <div className="buttonsContainer">
     <h2>Choisisez entre "pierre", "feuille" ou "ciseaux"</h2>
     <div className="buttons">
